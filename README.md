@@ -2,6 +2,10 @@
 
 ## **Overview of printf**
 
+
+## **NGARI-FRANCIS(author)
+## **JUSTIN UCHECHUKWU(as a collaborator)
+
 - In C Programming, `printf()` is one of the main output funtion.The function
 sends formated output to the screen.
 
