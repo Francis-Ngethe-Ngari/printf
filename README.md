@@ -22,7 +22,7 @@ sends formated output to the screen.
 	}
 ```
 
-#### **Output**
+### **Output**
 
 ```
 	Creating a custorm printf function
@@ -42,4 +42,16 @@ using the `#include <stdio.h>` statement.
 - The `return (0);` statement inside the `main()` function is the "Exit status"
 of the program. It's optional.
 
+#### **Syntax**
 
+```
+	printf("format_string", Arguments);
+```
+
+#### **Parameters**
+
+- format_string: Can be a single string or a string containing a format specify.
+
+- Arguements: It is the variable names whose value is to be printed.
+
+ 
