@@ -94,13 +94,13 @@ int _printf(const char *format, ...)
 					{
 						while (Numb != 0)
 						{
-							binary[i] = num % 2;
+							binary[itr] = Numb % 2;
 							Numb /= 2;
 							itr++;
 						}
 						while (itr--)
 						{
-							_putchar('0' + binary[i]);
+							_putchar('0' + binary[itr]);
 							_counter++;
 						}
 					}
