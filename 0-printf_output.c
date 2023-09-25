@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * _printf - prints formated output.
+ * _printf - prints output to console and
+ * also prints data based on format specifiers.
  *
- * @format: represents is a character string.
- * The format string is composed of zero or
- * more directives.
+ * @format: represents a single string or
+ * more which contains format specifiers.
  *
- * Return: printed characters count.
+ * Return: Count of characters successfully output
+ * in the console.
  *
  */
 
@@ -78,6 +79,33 @@ int _printf(const char *format, ...)
 					}
 					break;
 				}
+				case 'b':
+				{
+					unsigned int Numb = va_arg(var_Args, unsigned int);
+					int binary[50];
+					int itr = 0;
+
+					if (Numb == 0)
+					{
+						_putchar('0');
+						_counter++;
+					}
+					else
+					{
+						while (Numb != 0)
+						{
+							binary[i] = num % 2;
+							Numb /= 2;
+							itr++;
+						}
+						while (itr--)
+						{
+							_putchar('0' + binary[i]);
+							_counter++;
+						}
+					}
+					break;
+					}
 				case '%':
 				{
 					_putchar('%');
